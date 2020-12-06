@@ -6,13 +6,26 @@
 
 header {
 	display: flex;
-	height: 80px;
+	height: 90px;
 	background-image: url(header.svg);
+	background-image: linear-gradient(hsla(360, 100%, 100%, 0.0), 75%, white),
+	url(header.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid #000000;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.Nome{
+	margin-left: 5%;
+}
+
+.work {
+
+}
+.Social{
+	margin-right: 5%;
 }
 
 .bio {
@@ -20,6 +33,10 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 50px;
+	border: 1px solid #000000;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .foto {
@@ -29,6 +46,37 @@ header {
 }
 
 .bio p {
-	margin-left: 50px;
+	margin-left: 20px;
 	align-self: left;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 90px;
+	background-image: url(header.svg);
+	background-image: linear-gradient(white, 25%, hsla(360, 100%, 100%, 0.0)),
+	url(header.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.nomemail {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
+}
+
+.credit {
+	margin-bottom: 5px;
+	font-size: 7px;
+	color: black;
 }

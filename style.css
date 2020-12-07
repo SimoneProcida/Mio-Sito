@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'dosis-medium';
+	src: url('dosis-medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'dosis-light';
+	src: url('dosis-light.woff') format('woff');
+}
+
 header {
 	display: flex;
 	height: 90px;
@@ -14,7 +23,7 @@ header {
 	background-size: 100%;
 	justify-content: space-between;
 	align-items: center;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'dosis-medium', sans-serif;
 }
 
 .Nome{
@@ -24,19 +33,22 @@ header {
 .work {
 
 }
-.Social{
+.social, .social a:link {
+	display: flex;
+	justify-content: space-between;
 	margin-right: 5%;
+	text-decoration: none;
 }
 
 .bio {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 50px;
 	border: 1px solid #000000;
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'dosis-light', sans-serif;
 }
 
 .foto {
@@ -45,7 +57,7 @@ header {
 	display: flex;
 }
 
-.bio p {
+.testo-bio {
 	margin-left: 20px;
 	align-self: left;
 }
@@ -65,7 +77,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'dosis-medium', sans-serif;
 }
 
 .nomemail {
@@ -78,5 +90,9 @@ footer {
 .credit {
 	margin-bottom: 5px;
 	font-size: 7px;
+	color: black;
+}
+
+a:link, a:visited, a:hover, a:active {
 	color: black;
 }

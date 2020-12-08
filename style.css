@@ -24,7 +24,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	font-family: 'dosis-medium', sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 .nome{
@@ -38,6 +38,10 @@ header {
 	text-decoration: none;
 }
 
+.social img {
+	width: 20px;
+}
+
 .bio {
 	display: flex;
 	justify-content: center;
@@ -49,13 +53,13 @@ header {
 }
 
 .foto {
-	width: 50%;
-	height: 50%;
+	width: 40%;
+	height: 40%;
 	display: flex;
 }
 
 .testo-bio {
-	margin-left: 20px;
+	margin-left: 15px;
 	align-self: left;
 	font-size: 9px;
 }
@@ -83,7 +87,7 @@ footer {
 	height: 70px;
 	align-items: center;
 	justify-content: center;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 .credit {
@@ -94,4 +98,50 @@ footer {
 
 a:link, a:visited, a:hover, a:active {
 	color: black;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+	.testo-bio {
+		font-size: 12px;
+	}
+
+	header {
+		font-size: 18px;
+	}
+
+	.nomemail {
+		font-size: 18px;
+	}
+
+	.foto {
+		width: 30%;
+		height: 30%;
+	}
+
+	.social img {
+		width: 18px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.testo-bio {
+		font-size: 20px;
+	}
+
+	header {
+		font-size: 25px;
+	}
+
+	.nomemail {
+		font-size: 25px;
+	}
+
+	.foto {
+		width: 25%;
+		height: 25%;
+	}
+
+	.social img {
+		width: 25px;
+	}
 }
